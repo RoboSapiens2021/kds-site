@@ -66,7 +66,9 @@
    padding: 0;
    margin: 0;
 }
-
+.center {
+   text-align: center;
+}
 html {
    scroll-behavior: smooth;
 }
@@ -488,7 +490,7 @@ the website, in dark theme
    transform: translateY(-0.25rem);
 }
 
-/*=============== PRODUCTS ===============*/
+/*=============== PRODUCTS 
 .product__description {
    text-align: center;
 }
@@ -551,6 +553,7 @@ the website, in dark theme
 .product__card:hover .product__img {
    transform: translateY(-0.5rem);
 }
+===============*/
 
 /*=============== QUESTIONS ===============*/
 .questions {
@@ -558,13 +561,13 @@ the website, in dark theme
 }
 
 .questions__container {
-   gap: 1.5rem;
+   gap: 1rem;
    padding: 1.5rem 0;
 }
 
 .questions__group {
    display: grid;
-   row-gap: 1.5rem;
+   row-gap: 1rem;
 }
 
 .questions__item {
@@ -719,6 +722,13 @@ the website, in dark theme
    z-index: 10;
 }
 
+/*========Encapsulation=======*/
+.spacing {
+   margin-bottom: 50px;
+}
+.spacing-sm {
+   margin-bottom: 20px;
+}
 /*=============== FOOTER ===============*/
 .footer__container {
    row-gap: 3rem;
