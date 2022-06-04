@@ -1,7 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-/*=============== VARIABLES CSS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"); /*=============== VARIABLES CSS ===============*/
 :root {
    --header-height: 3.5rem; /*56px*/
 
@@ -30,8 +29,8 @@
    --smaller-font-size: 0.75rem;
 
    /*========== Font weight ==========*/
-   --font-medium: 500;
-   --font-semi-bold: 600;
+   --font-medium: 600;
+   --font-semi-bold: 700;
 
    /*========== Margenes Bottom ==========*/
    /*.5rem = 8px | 1rem = 16px ...*/
@@ -222,7 +221,7 @@ the website, in dark theme
 }
 
 .nav__logo-icon {
-   font-size: 1.15rem;
+   height: 3.15rem;
    color: var(--first-color);
 }
 
@@ -283,7 +282,7 @@ the website, in dark theme
 
 /* Change background header */
 .scroll-header {
-   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, 0.1);
+   background-color: rgb(255, 255, 255);
 }
 
 /* Active link */
@@ -398,7 +397,13 @@ the website, in dark theme
    align-items: center;
    column-gap: 0.5rem;
 }
-
+.button--alt {
+   background-color: var(--body-color);
+   color: var(--text-color);
+}
+.button--alt:hover {
+   background-color: var(--body-color);
+}
 .button--link {
    color: var(--first-color);
    font-weight: var(--font-medium);
@@ -1072,5 +1077,23 @@ the website, in dark theme
 
    .scrollup {
       right: 3rem;
+   }
+}
+
+.column {
+   float: left;
+   width: 33.33%;
+   padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+@media screen and (max-width: 670px) {
+   .column {
+      width: 100%;
    }
 }
