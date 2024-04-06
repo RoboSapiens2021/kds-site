@@ -148,7 +148,6 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home__data`);
-sr.reveal(`.mySlides`);
 sr.reveal(`.home__img`, { delay: 500 });
 sr.reveal(`.home__social`, { delay: 600 });
 sr.reveal(`.about__img, .contact__box`, { origin: "left" });
