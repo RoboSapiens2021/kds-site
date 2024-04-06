@@ -765,6 +765,7 @@ the website, in dark theme
 /*=============== FOOTER ===============*/
 .footer__container {
    row-gap: 3rem;
+   text-align: center;
 }
 
 .footer__logo {
